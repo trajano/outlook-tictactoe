@@ -15,7 +15,10 @@ namespace OutlookAddIn1
         public UserControl1()
         {
             InitializeComponent();
-            this.webBrowser2.Url = new Uri("https://www.trajano.net/");
+            System.Reflection.Assembly assemblyInfo = System.Reflection.Assembly.GetExecutingAssembly();
+            Uri uriCodeBase = new Uri(assemblyInfo.CodeBase);
+
+            this.webBrowser2.Url = new Uri(uriCodeBase, @"HTMLPage1.html");
 
         }
 
