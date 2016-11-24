@@ -10,8 +10,21 @@ namespace OutlookAddIn1
 {
     public partial class ThisAddIn
     {
+        private UserControl1 myUserControl1;
+        private Microsoft.Office.Tools.CustomTaskPane myCustomTaskPane;
+
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
+        }
+        public void toggleCustomTaskPane()
+        {
+            if (myUserControl1 == null)
+            {
+                myUserControl1 = new UserControl1();
+                myCustomTaskPane = this.CustomTaskPanes.Add(myUserControl1, "My Task Pane");
+            }
+
+            myCustomTaskPane.Visible = !myCustomTaskPane.Visible;
 
         }
         protected override Microsoft.Office.Core.IRibbonExtensibility CreateRibbonExtensibilityObject()

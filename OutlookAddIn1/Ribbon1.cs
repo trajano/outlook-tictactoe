@@ -40,7 +40,7 @@ namespace OutlookAddIn1
 
         public void OnJsPaneButton(Office.IRibbonControl control)
         {
-            MessageBox.Show("Hello world");
+            Globals.ThisAddIn.toggleCustomTaskPane();
         }
 
         #region IRibbonExtensibility Members
