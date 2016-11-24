@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.webBrowser2 = new System.Windows.Forms.WebBrowser();
+            this.webControl1 = new EO.WebBrowser.WinForm.WebControl();
+            this.webView1 = new EO.WebBrowser.WebView();
             this.SuspendLayout();
             // 
             // label2
@@ -42,23 +43,22 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "This is from the button";
             // 
-            // webBrowser2
+            // webControl1
             // 
-            this.webBrowser2.AllowWebBrowserDrop = false;
-            this.webBrowser2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.webControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser2.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser2.Location = new System.Drawing.Point(7, 31);
-            this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser2.Name = "webBrowser2";
-            this.webBrowser2.Size = new System.Drawing.Size(341, 580);
-            this.webBrowser2.TabIndex = 1;
-            this.webBrowser2.WebBrowserShortcutsEnabled = false;
+            this.webControl1.BackColor = System.Drawing.Color.White;
+            this.webControl1.Location = new System.Drawing.Point(8, 32);
+            this.webControl1.Name = "webControl1";
+            this.webControl1.Size = new System.Drawing.Size(335, 568);
+            this.webControl1.TabIndex = 1;
+            this.webControl1.Text = "webControl1";
+            this.webControl1.WebView = this.webView1;
             // 
             // UserControl1
             // 
-            this.Controls.Add(this.webBrowser2);
+            this.Controls.Add(this.webControl1);
             this.Controls.Add(this.label2);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(351, 614);
@@ -70,6 +70,7 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.WebBrowser webBrowser2;
+        private EO.WebBrowser.WinForm.WebControl webControl1;
+        private EO.WebBrowser.WebView webView1;
     }
 }
