@@ -15,6 +15,8 @@ namespace OutlookAddIn1
         public UserControl1()
         {
             InitializeComponent();
+            this.webBrowser2.Url = new Uri("https://www.trajano.net/");
+
         }
 
     }
