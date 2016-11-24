@@ -38,10 +38,6 @@ namespace OutlookAddIn1
         {
         }
 
-        public void OnJsPaneButton(Office.IRibbonControl control)
-        {
-            Globals.ThisAddIn.toggleCustomTaskPane();
-        }
 
         #region IRibbonExtensibility Members
 
@@ -60,6 +56,10 @@ namespace OutlookAddIn1
             this.ribbon = ribbonUI;
         }
 
+        public void OnJsPaneButton(Office.IRibbonControl control)
+        {
+            Globals.ThisAddIn.toggleCustomTaskPane();
+        }
         #endregion
 
         #region Helpers
