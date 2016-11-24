@@ -12,8 +12,12 @@ namespace OutlookAddIn1
     {
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
-        }
 
+        }
+        protected override Microsoft.Office.Core.IRibbonExtensibility CreateRibbonExtensibilityObject()
+        {
+              return new Ribbon1();
+        }
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
         {
             // Note: Outlook no longer raises this event. If you have code that 
