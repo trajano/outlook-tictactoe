@@ -44,11 +44,17 @@
             // 
             // webBrowser2
             // 
+            this.webBrowser2.AllowWebBrowserDrop = false;
+            this.webBrowser2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.webBrowser2.IsWebBrowserContextMenuEnabled = false;
             this.webBrowser2.Location = new System.Drawing.Point(7, 31);
             this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser2.Name = "webBrowser2";
             this.webBrowser2.Size = new System.Drawing.Size(341, 580);
             this.webBrowser2.TabIndex = 1;
+            this.webBrowser2.WebBrowserShortcutsEnabled = false;
             // 
             // UserControl1
             // 
